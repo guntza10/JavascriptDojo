@@ -1,0 +1,19 @@
+{
+  "name": "javascriptdojo",
+  "version": "1.0.0",
+  "description": "Doc Javascript For me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guntza10/JavascriptDojo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guntza10/JavascriptDojo/issues"
+  },
+  "homepage": "https://github.com/guntza10/JavascriptDojo#readme"
+}
