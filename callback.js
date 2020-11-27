@@ -1,0 +1,1 @@
+var url = "http://marcuscode.com/lang/javascript/callback-function"
