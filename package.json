@@ -18,6 +18,8 @@
   "homepage": "https://github.com/guntza10/JavascriptDojo#readme",
   "type": "module",
   "dependencies": {
-    "esm": "^3.2.25"
+    "bluebird": "^3.7.2",
+    "esm": "^3.2.25",
+    "node-fetch": "^2.6.1"
   }
 }
