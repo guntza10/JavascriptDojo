@@ -4,36 +4,36 @@ import fetch from 'node-fetch';
 -ให้มันรอการทำงานของ call back(promise) ให้เสร็จก่อนถึงจะไปต่อ
  */
 
-// async function logName(name) {
-//     console.log(name);
-//     // 1. we can yield promise using await
-//     const transformName = new Promise((resolve, reject) => {
-//         setTimeout(() => resolve(name.toUpperCase()), 5000);
-//     });
-//     const result = await transformName;
-//     // 2. return a promise (**core)
-//     return result;
-// }
+async function logName(name) {
+    console.log(name);
+    // 1. we can yield promise using await
+    const transformName = new Promise((resolve, reject) => {
+        setTimeout(() => resolve(name.toUpperCase()), 5000);
+    });
+    const result = await transformName;
+    // 2. return a promise (**core)
+    return result;
+}
 
-// logName('Gunt').then(res => {
-//     console.log(`result from async function = ${res}`);
-// }).catch(err => err);
+logName('Gunt').then(res => {
+    console.log(`result from async function = ${res}`);
+}).catch(err => err);
 
 
 //////////////////////////////////////////////////////////////////////////////////
 
 // convert generator to async await
-// const getRandomUsers = async n => {
-//     const fetchRandomUsers = await fetch(`https://randomuser.me/api/?results=${n}`);
-//     const data = await fetchRandomUsers.json();
-//     data.results.forEach(user => {
-//         const { gender, email } = user;
-//         console.log(`${gender} -> ${email}`);
-//     });
-//     return data;
-// };
+const getRandomUsers = async n => {
+    const fetchRandomUsers = await fetch(`https://randomuser.me/api/?results=${n}`);
+    const data = await fetchRandomUsers.json();
+    // data.results.forEach(user => {
+    //     const { gender, email } = user;
+    //     console.log(`${gender} -> ${email}`);
+    // });
+    return data;
+};
 
-// getRandomUsers(4);
+getRandomUsers(4).then(res => console.log(res.results)).catch(err => err);
 
 // handle error async await (ใช้ try catch)
 const getRandomUsersHandleErr = async n => {
@@ -50,4 +50,4 @@ const getRandomUsersHandleErr = async n => {
     }
 };
 
-getRandomUsersHandleErr(4);
+getRandomUsersHandleErr(4).then(res => console.log(res.results)).catch(err => console.log("errorJa", err));
