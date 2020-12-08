@@ -49,3 +49,5 @@ let LedArr = Array(10).fill(new LedLight('', "off"));
 console.log(LedArr);
 let whiteSpaceGen = Array(10).fill(' ');
 console.log(whiteSpaceGen);
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
