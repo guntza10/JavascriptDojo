@@ -134,11 +134,18 @@ console.log(student1.toString());
 
 /*
 - https://www.geeksforgeeks.org/introduction-object-oriented-programming-javascript/
+- https://css-tricks.com/the-flavors-of-object-oriented-programming-in-javascript/
  */
 
  /*
  Note : ในการสร้าง object ทำได้ 3 แบบ
  - literal
- - object constructor (สร้างจาก function ผ่าน new keyword)
+ - object constructor [contructor function] (สร้างจาก function ผ่าน new keyword)
  - class ES6 (สร้างจาก class ผ่าน new keyword)
   */
+
+  /*
+  Note : 
+  - factory function => function ที่ return เป็น object (ไม่ต้อง Instance new keyword เรียกใช้ได้เลย)
+  - contructor function => funtion ที่ใช้ this keyword เป็น property ถูกสร้างเป็น object ผ่าน new keyword
+   */
