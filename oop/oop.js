@@ -149,3 +149,7 @@ console.log(student1.toString());
   - factory function => function ที่ return เป็น object (ไม่ต้อง Instance new keyword เรียกใช้ได้เลย)
   - contructor function => funtion ที่ใช้ this keyword เป็น property ถูกสร้างเป็น object ผ่าน new keyword
    */
+
+   /*
+   Note : property(this keyword) ใน function ปกติ มัน declare บน prototype property เป็น default อยู่แล้ว
+    */
