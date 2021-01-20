@@ -20,4 +20,5 @@ export var PI = 3.1415;
 name export
 - เราสามารถมี name export ได้หลายตัวต่อ 1 module
 - name export ตอน import ไปใช้ชื่อต้องเหมือนกับใน export เท่านั้น เปลี่ยนไม่ได้
+- ตอน import ต้องอยู่ใน { } หรือ จะ import ทุกอันโดยใช้ import * as "ชื่อตัวแปรที่แทนการ import ทุก module" ก็ได้
 */
