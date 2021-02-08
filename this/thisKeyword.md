@@ -129,7 +129,7 @@ me.age; // 27
 
 ![lexicalBinding2](lexicalBinding2.PNG)
 
-`Note : ` ใน arrow function ไม่มี this เป็นของตัวเอง ทำให้ javascript interpreter มันจะมองหา enclosing scope(parent) ที่ this keyword จะสามารถ ref ถึงได้แทน
+`Note : ` ใน arrow function ไม่มี this เป็นของตัวเอง ทำให้ javascript interpreter มันจะมองหา enclosing scope(parent) ที่ this keyword จะสามารถ ref ถึงได้แทน (`Lexical Binding`)
 
 `Note : ` Lexical Binding ใช้ arrow function จัดการจะง่ายกว่า
 
