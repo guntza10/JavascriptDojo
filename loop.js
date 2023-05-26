@@ -48,6 +48,13 @@ for (let n of person) {
   console.log("last of each loop");
 }
 
+// for loop with index
+const array = [10, 20, 30, 40, 50];
+
+for (const [index, value] of array.entries()) {
+  console.log(`Index: ${index}, Value: ${value}`);
+}
+
 // for loop in => suitable for loop key object
 const obj = {
   name: "John",
