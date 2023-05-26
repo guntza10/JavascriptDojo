@@ -64,3 +64,8 @@
 
 ![startUp](/images/array01.png)
 ![startUp](/images/array02.png)
+
+### `String`
+
+![startUp](/images/string01.png)
+![startUp](/images/string02.png)
