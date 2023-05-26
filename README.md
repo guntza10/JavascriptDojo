@@ -59,3 +59,8 @@
 ![startUp](/images/object2.JPG)
 
 ![startUp](/images/object3.JPG)
+
+### `Array`
+
+![startUp](/images/array01.png)
+![startUp](/images/array02.png)
