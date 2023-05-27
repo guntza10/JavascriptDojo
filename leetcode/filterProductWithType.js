@@ -1,4 +1,3 @@
-// playground js
 const products = [
   ["key", "500", "2014"],
   ["remote", "600", "2013"],
